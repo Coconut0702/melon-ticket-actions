@@ -2,7 +2,7 @@ name: 'Melon Ticket Notifier'
 description: 'GitHub action that notifies ticket availability'
 author: 'MooYeol Prescott Lee'
 inputs:
-  product-id:
+  product-id:${{ secrets.prodId}}
     description: 'Product ID of Target Ticket'
     required: true
   schedule-id:
@@ -11,7 +11,7 @@ inputs:
   seat-id:
     description: 'Seat Id of Target Ticket'
     required: true
-  slack-incoming-webhook-url:
+  slack-incoming-webhook-url:${{ secrets.SHINee }}
     description: 'URL of Slack Incoming Webhook'
     required: true
   message:
